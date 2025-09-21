@@ -1,0 +1,412 @@
+:root {
+    --primary-red: #cc0000;
+    --secondary-red: #ff3333;
+    --dark-gray: #1a1a1a;
+    --medium-gray: #2c2c2c;
+    --light-gray: #444444;
+    --off-white: #f5f5f5;
+    --gradient-dark: linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 100%);
+  }
+  
+  body {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #cbcbcb;
+    color: var(--dark-gray);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Rubik Mono One', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--dark-gray);
+    text-align: center;
+  }
+  
+  .basic-info-input{
+    width: 50%;
+    padding-right: 1rem;
+    
+  }
+
+  .basic-info-grid {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 12rem;
+  }
+
+  .avatar-box {
+    width: 50%;
+    padding-left: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .attributes-section {
+    display: flex;
+    justify-content: center;
+    gap: 6.5rem;
+  }
+
+  .combat-section {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  .skills-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+    gap: 2rem;
+  }
+
+  .checkbox {
+    margin-right: 0.5rem;
+  }
+
+  .skills-section > div {
+    display: flex; /* Ensure each skill item is a flex container */
+    align-items: center; /* Center items vertically */
+    margin-left: 20%;
+  }
+
+  #character-creation-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  #save-character-button {
+    background-color: #0d6efd;
+    color: 'white';
+  }
+
+  .no-bullets {
+    list-style-type: none;
+    padding-left: 0; /* Remove left padding */
+    margin: 0; /* Remove any default margin */
+  }
+
+  #cancel-character-button {
+    background-color: red;
+    color: 'white';
+  }
+
+  .character-cards {
+    background-image: linear-gradient(90deg, #3a3a3a 0%, #0e0e0e 100%);
+    color: white;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--primary-red);
+    box-shadow: #1a1a1a 8px 8px 10px;
+  }
+
+  .character-card-content{
+    display: flex;
+    justify-content: center;
+  }
+
+  .view-character-card {
+    background-color: #cc0000;
+    color: white;
+  }
+  
+  label{
+    font-weight: 1000;
+  }
+
+  .page-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 2rem 0;
+    color: var(--dark-gray);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .page-subtitle {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--light-gray);
+  }
+  
+  /* Hero section styling for the about page */
+  .hero-section {
+    color: Black;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    border-bottom: 3px solid var(--primary-red);
+  }
+
+  .hero-section::after {
+    content: '';
+    position: relative;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .hero-title {
+    font-family: 'Metamorphous', cursive;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    color: rgb(28, 28, 28);
+    text-shadow: 2px 2px 4px rgba(66, 47, 47, 0.3);
+    letter-spacing: 0.05em;
+  }
+  
+  .hero-subtitle {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: rgb(28, 28, 28);
+    padding-bottom: 1.5rem;
+    padding-top: 2rem;
+  }
+
+  .hero-subtitle-2{
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: rgb(28, 28, 28);
+  }
+  
+  /* Content section styling */
+  .content-section {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 3rem 4rem;
+    background: rgba(225, 226, 222, 0.95);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
+  }
+
+  .welcome-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .feature-list {
+    margin: 2rem 0;
+  }
+  
+  .feature-item {
+    margin-bottom: 1.5rem;
+    padding-left: 2.5rem;
+    position: relative;
+    line-height: 1.6;
+    transition: transform 0.2s ease;
+  }
+  
+  .feature-item strong {
+    color: var(--primary-red);
+    font-size: 1.1rem;
+    margin-right: 0.5rem;
+  }
+  
+  .feature-emoji {
+    position: absolute;
+    left: 0;
+    top: 2px;
+    font-size: 1.5rem;
+  }
+  
+  .call-to-action {
+    text-align: center;
+    margin-top: 3rem;
+    font-weight: bold;
+    color: var(--primary-red);
+    font-size: 1.2rem;
+    padding: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+/* Background styling for all main pages */
+.about-page,
+.character-sheet-container,
+.content-container,
+.container, /* Bootstrap container class */
+body > #root > div:not(.navbar):not(.user-menu) /* Target main content areas */ {
+    position: relative;
+}
+
+.about-page::before,
+.character-sheet-container::before,
+.content-container::before,
+.container::before,
+body > #root > div:not(.navbar):not(.user-menu)::before {
+    content: '';
+    position: fixed;
+    top: 10rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../assets/tpkLogo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30%;
+    opacity: 0.1;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.character-sheet {
+  background-color: #3a3a3a;
+  color: #f5f5f5;
+  border-style: solid;
+  border-color: #cc0000;
+  padding: 2.5rem;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.card-body.no-left-border {
+  border-left: none;
+}
+
+.card-body.background-overide {
+  background: linear-gradient(45deg, #161616, #282727, #1a1a1a),;
+}
+
+#remove-milestone-button {
+  width: 75px;
+  align-self: end;
+  margin-bottom: 25px;
+}
+
+#campaign-player-list {
+  color: white;
+}
+
+@media screen and (max-width: 1200px) {
+/* Character Creation */
+
+  .attributes-section {
+    gap: 5.5rem;
+  }
+
+}
+
+@media screen and (max-width: 991px) {
+/* Character Creation */
+  .basic-info-grid {
+    gap: 4rem;
+  }
+
+  .attributes-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    justify-items: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+/* Character Creation */
+  .basic-info-input {
+    width: 100%;
+    padding-right: 0rem;
+  }
+
+  .basic-info-grid {
+    flex-direction: column;
+  }
+
+/* My Characters */
+  #my-characters-header {
+    flex-direction: column;
+  }
+
+
+}
+
+@media screen and (max-width: 575px) {
+/* About */
+  .hero-title {
+    font-size: 2.8rem;
+  }
+
+  .hero-subtitle {
+    font-size: 2rem;
+  }
+
+
+/* Character Creation */
+  .skills-section {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .combat-section {
+    align-items: flex-end;
+  }  
+}
+
+@media screen and (max-width: 380px) {
+/* About */
+  .hero-title {
+    font-size: 2.4rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.7rem;
+  }
+
+  .hero-subtitle-2 {
+    font-size: 1rem;
+  }
+
+  .content-section {
+    padding: 2rem 1rem;
+  }
+
+/* Character Creation */
+  .avatar-image {
+    width: 70%;
+    height: 70%;
+  }
+
+  .avatar-nav-button {
+    width: 30px;
+    height: 70%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .avatar-nav-button.right {
+    right: 0px;
+  }
+
+  .avatar-nav-button.left {
+    left: 0px;
+  }
+
+  .attributes-section {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .skills-section > div {
+    margin-left: 0;
+  }
+
+  .mb-2 {
+    margin-bottom: 0;
+  }
+
+  label {
+    margin-bottom: 0;
+  }
+}

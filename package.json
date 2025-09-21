@@ -1,0 +1,38 @@
+{
+  "name": "total-player-knowledge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "cd server && npm start",
+    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm run dev\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "build": "cd server && npm run build && cd ../client && npm run build",
+    "render-build": "npm install && npm run build",
+    "dev": "npm run build && npm run develop",
+    "cypress": "cypress open",
+    "cypress:component": "cypress run --component",
+    "test:component": "cypress run --component",
+    "test": "cd client && npm run cypress",
+    "seed": "npm run build && cd server && npm run seed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@testing-library/cypress": "^10.0.2",
+    "@types/cypress": "^1.1.6",
+    "@types/node": "^22.10.2",
+    "autoprefixer": "^10.4.20",
+    "concurrently": "^8.2.0"
+  },
+  "engines": {
+    "node": ">=18.0.0 <19.0.0"
+  },
+  "dependencies": {
+    "@3d-dice/dice-box": "^1.1.4",
+    "@3d-dice/dice-ui": "^0.5.2",
+    "lucide-react": "^0.469.0",
+    "react-responsive": "^10.0.0"
+  }
+}

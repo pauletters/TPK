@@ -1,0 +1,97 @@
+.player-handbook {
+    position: fixed;
+    left: 0;
+    top: 200px;
+    bottom: 100px;
+    width: 250px;
+    background: linear-gradient(to right, #1a1a1a, #2c2c2c);
+    color: white;
+    padding: 1rem;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    overflow-y: auto;
+    border-radius: 0 8px 8px 0;
+  }
+  
+  .handbook-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .menu-title {
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin: 0;
+    border-bottom: 2px solid #cc0000;
+  }
+  
+  .menu-items {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .menu-item {
+    width: 100%;
+    text-align: left;
+    padding: 0.75rem 1rem;
+    background-color: #343a40;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    transition: all 0.2s ease;
+  }
+  
+  .menu-item:hover {
+    background-color: #cc0000;
+    transform: translateX(5px);
+  }
+  
+  /* Modal Styles */
+  .modal-content {
+    background-color: #2c2c2c;
+    color: white;
+  }
+  
+  .modal-header {
+    border-bottom: 2px solid #cc0000;
+  }
+  
+  .modal-body {
+    max-height: 70vh;
+    overflow-y: auto;
+  }
+  
+  /* Accordion Styles */
+  .accordion-button {
+    background-color: #343a40 !important;
+    color: white !important;
+    text-shadow: #1a1a1a 1px 1px 1px;
+  }
+  
+  .accordion-button:not(.collapsed) {
+    background-color: #dc3545 !important;
+    color: white !important;
+  }
+  
+  .accordion-body {
+    background-color: white;
+    color: black;
+  }
+
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .player-handbook {
+      position: relative;
+      top: 0;
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+  
+    .menu-item:hover {
+      transform: none;
+    }
+  }
