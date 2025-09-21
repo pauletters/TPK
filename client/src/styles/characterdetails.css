@@ -1,0 +1,372 @@
+/* Nav Tabs Styling */
+.nav-pills .nav-link {
+    background-color: #343a40;
+    color: white;
+    margin-bottom: 0.5rem;
+    transition: background-color 0.2s ease;
+  }
+  
+  .nav-pills .nav-link:hover {
+    background-color: #dc3545;  
+    color: white !important;
+  }
+  
+  .nav-pills .nav-link.active {
+    background-color: #dc3545;  
+    color: white;
+  }
+  
+  .nav-pills {
+    padding: 1rem;
+    border-radius: 0.25rem;
+  }
+  
+  .nav-pills .nav-item {
+    width: 100%;
+    text-align: center;
+  }
+
+/* Container and layout styling */
+.character-sheet-container {
+  position: relative;
+  display: flex;
+  min-height: 600px;
+  margin: 20px, 0;
+}
+
+.content-container {
+  flex-grow: 1;
+  background: rgb(63, 61, 61);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-right: 0;
+  min-height: 600px;
+}
+
+/* Tab styling */
+.character-tabs {
+  width: 170px;
+}
+
+.character-tabs .nav-pills {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.character-tabs .nav-link {
+  background-color: #343a40;
+  color: white;
+  border-radius: 0 4px 4px 0;
+  padding: 10px 15px;
+  text-align: left;
+  width: 100%;
+  transition: all 0.2s ease;
+}
+
+.character-tabs .nav-link:hover {
+  background-color: #dc3545;
+  color: white !important;
+}
+
+.character-tabs .nav-link.active {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Card styling */
+.content-container .card {
+  height: 100%;
+  margin-bottom: 15px;
+  background-color: #ebeced;
+  color: rgb(9, 9, 9);
+  border:none;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.content-container .card-header {
+  background-color: #dc3545;
+  padding: 10px 15px;
+  color: white;
+  border: none;
+  margin: -1px -1px 0 -1px; /* Negative margin to ensure header covers the full width */
+  border-radius: 6px 6px 0 0; /* Match the card's top border radius */
+}
+
+/* Primary card headers (the main red ones) */
+.content-container > .card > .card-header,
+.content-container > div > .card > .card-header {
+  background-color: #dc3545;
+}
+
+/* Secondary card headers (the inner gray ones) */
+.content-container .card .card .card-header {
+  background-color: #343a40;
+  
+  box-shadow: black 0 3px 4px;
+}
+
+/* Special background name header */
+.background-name-header {
+  background-color: #343a40 !important;
+  padding: 1rem;
+  border-radius: 4px;
+  color: white !important;
+}
+
+/* Grid layout */
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.content-grid-wide {
+  grid-column: span 3;
+}
+
+/* Button styling */
+.content-container .btn-primary {
+    background-color: #343a40;
+    border-color: #343a40;
+    color: white;
+    transition: all 0.2s ease;
+}
+
+.content-container .btn-primary:hover,
+.content-container .btn-primary:focus,
+.content-container .btn-primary:active {
+    background-color: #2c3035 !important;
+    border-color: #2c3035 !important;
+    color: white !important;
+    box-shadow: none !important;
+    transition: all 0.2s ease;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for selected or active buttons */
+.content-container .btn-primary.active,
+.content-container .btn-primary:active {
+    background-color: #dc3545 !important;
+    border-color: #dc3545 !important;
+}
+
+/* Secondary button variations */
+.content-container .btn-outline-primary {
+    color: #343a40;
+    border-color: #343a40;
+    background-color: transparent;
+}
+
+.content-container .btn-outline-primary:hover,
+.content-container .btn-outline-primary:focus {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: white;
+}
+
+/* Small button adjustments */
+.content-container .btn-sm {
+    padding: 0.375rem 0.75rem;
+    font-size: 0.875rem;
+    border-radius: 0.25rem;
+}
+
+/* Button groups or segments */
+.content-container .btn-group .btn {
+    border-radius: 0;
+}
+
+.content-container .btn-group .btn:first-child {
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+}
+
+.content-container .btn-group .btn:last-child {
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+
+/* Add button specific styling */
+.content-container .card-header .btn {
+    float: right;
+    margin-top: -0.25rem;
+    margin-bottom: -0.25rem;
+}
+
+/* Disabled state */
+.content-container .btn-primary:disabled,
+.content-container .btn-primary.disabled {
+    background-color: #343a40;
+    border-color: #343a40;
+    opacity: 0.65;
+}
+
+/* Focus state without the default outline */
+.content-container .btn:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.edit-button {
+    padding-left: 1.9rem;
+}
+
+.privacy-toggle {
+    padding-left: 1.9rem;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+#private-toggle {
+    margin-left: .05rem;
+}
+
+#character-tabs-top {
+  display: none;
+}
+
+#back-to-characters-button-top {
+  display: none;
+}
+
+.character-detail {
+  display: flex;
+  justify-content: space-between;
+}
+
+.character-detail-container {
+  border-left: 0 !important;
+  padding: 15px 65px 15px 65px !important;
+}
+
+@media screen and (max-width: 1399px) {
+  .character-detail-container {
+    padding: 15px 40px 15px 40px !important;
+  }  
+}
+
+@media screen and (max-width: 1199px) {
+  #character-tabs-side {
+    display: none;
+  }
+  
+  #character-tabs-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    margin-bottom: 20px;
+  }
+
+  .character-tabs .nav-pills {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .nav-pills .nav-item {
+    width: auto;
+  }
+
+  .privacy-toggle {
+    padding-left: 0;
+  }
+  .character-detail-container {
+    padding: 15px 35px 15px 35px !important;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .character-tabs .nav-pills {
+    padding-right: 0px;
+  }
+  .col-md-6 {
+    width: 100%;
+  }
+
+  .nav-link {
+    margin: 0;
+  }
+
+  #character-name-container {
+    flex-direction: column;
+  }
+
+  #back-to-characters-button-side {
+    display: none;
+  }
+
+  #back-to-characters-button-top {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .character-detail-container {
+    padding: 15px 20px 15px 20px !important;
+  }
+
+  .character-detail-container .basic-info{
+    display: block;
+  }
+
+  #basic-info-level-input {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  #character-tabs-top {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .character-tabs .nav-pills {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .character-detail-container {
+    padding: 15px 110px 15px 110px !important;
+  }
+
+  .character-detail-container .basic-info{
+    display: flex;
+  }
+
+}
+
+@media screen and (max-width: 515px) {
+  #skill-list {
+    flex-direction: column;
+  }
+
+  .skill {
+    width: 100%;
+  }
+
+  #back-to-characters-button {
+    display: none;
+  }
+
+  .character-detail-container {
+    padding: 15px 90px 15px 90px !important;
+  }
+
+  .character-detail-container .basic-info {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .character-detail-container {
+    padding: 15px 40px 15px 40px !important;
+  }
+}

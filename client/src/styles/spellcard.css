@@ -1,0 +1,87 @@
+.spell-name-container {
+    flex-grow: 1;
+    min-width: 0; /* This allows the spell name to overflow if it's too long */
+  }
+  
+  .spell-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .btn-spaced {
+    margin-left: .2rem;
+  }
+
+  /* Enhanced card styling */
+.card {
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background-color: white;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dice-roller-card:hover {
+    transform: none !important;
+    box-shadow: none !important;
+}
+
+/* Add subtle border between card sections */
+.card-body {
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+    border-left: 2px solid rgba(0, 0, 0, 0.1);
+    padding: .9rem;
+}
+
+/* Add a subtle background for different spell schools */
+.card-subtitle {
+    padding: 0.25rem 0.5rem;
+    margin: -0.25rem 0 0.5rem -0.5rem;
+    border-radius: 4px;
+    display: inline-block;
+    font-size: 0.875rem;
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+/* Button styling overrides */
+.btn-outline-primary {
+    color: #2c3035;
+    background-color: white;
+    border-color: #2c3035;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus:hover {
+    color: white !important;
+    background-color: #757677 !important;
+    border-color: #757677 !important;
+}
+
+.btn-outline-primary:focus,
+.btn-outline-primary:active,
+.btn-outline-primary:active:focus {
+    color: #2c3035 !important;
+    background-color: white !important;
+    border-color: #2c3035 !important;
+    box-shadow: none !important;
+}
+
+/* Override Bootstrap's focus styles */
+.btn:focus,
+.btn.focus {
+    box-shadow: none !important;
+}
+
+/* Ensure hover works even after focus */
+.btn-outline-primary.focus:hover,
+.btn-outline-primary:focus:hover {
+    color: white !important;
+    background-color: #757677 !important;
+    border-color: #757677 !important;
+}

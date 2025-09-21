@@ -1,0 +1,124 @@
+.modal-content {
+    background-color: var(--off-white);
+    border-radius: 8px;
+    border: none;
+  }
+  
+  .modal-header {
+    background-color: var(--dark-gray);
+    color: white;
+    border-radius: 8px 8px 0 0;
+    border-bottom: 2px solid var(--primary-red);
+  }
+  
+  .modal-header .nav-pills .nav-link {
+    background-color: transparent;
+    color: white !important;
+    border-radius: 4px;
+    padding: 0.5rem 2rem;
+    margin: 0 0.5rem;
+    transition: all 0.2s ease;
+  }
+  
+  .modal-header .nav-pills .nav-link.active {
+    background-color: var(--primary-red) !important;
+    color: white !important;
+  }
+
+  .modal-header .nav-pills .nav-link:hover {
+    background-color: var(--secondary-red) !important;
+    color: white !important;
+  }
+  
+  .modal-body {
+    padding: 2rem;
+  }
+
+  /* Form styling */
+.modal-body .form-label {
+    color: var(--dark-gray);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  
+  .modal-body .form-control {
+    border: 1px solid var(--light-gray);
+    border-radius: 4px;
+    padding: 0.75rem;
+  }
+  
+  .modal-body .form-control:focus {
+    border-color: var(--primary-red);
+    box-shadow: 0 0 0 0.2rem rgba(204, 0, 0, 0.25);
+  }
+
+  /* Submit button styling */
+.modal-body .auth-submit-btn {
+    background-color: var(--primary-red) !important;
+    border-color: var(--primary-red) !important;
+    padding: 0.75rem 2rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    width: 100%;
+    color: white !important;
+  }
+  
+  .auth-submit-btn:hover:not(:disabled) {
+    background-color: var(--secondary-red) !important;
+    border-color: var(--secondary-red) !important;
+    color: white !important;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .modal-body .auth-submit-btn:disabled {
+    background-color: var(--primary-red) !important;
+    border-color: var(--primary-red) !important;
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  
+  .form-label {
+    color: var(--dark-gray);
+    font-weight: 500;
+  }
+  
+  .form-control {
+    border: 1px solid var(--light-gray);
+    border-radius: 4px;
+    padding: 0.75rem;
+  }
+  
+  .form-control:focus {
+    border-color: var(--primary-red);
+    box-shadow: 0 0 0 0.2rem rgba(204, 0, 0, 0.25);
+  }
+  
+  .btn-success {
+    background-color: var(--primary-red);
+    border-color: var(--primary-red);
+    padding: 0.75rem 2rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+  }
+  
+  .btn-success:hover {
+    background-color: var(--secondary-red);
+    border-color: var(--secondary-red);
+    transform: translateY(-1px);
+  }
+  
+  .modal-body .alert-danger {
+    background-color: #ffe6e6;
+    border-color: var(--primary-red);
+    color: var(--primary-red);
+    margin-bottom: 1.5rem;
+  }
+
+  .modal-header .btn-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    margin: 0;
+    padding: 1rem;
+  }
